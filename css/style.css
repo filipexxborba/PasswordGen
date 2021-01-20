@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: #1A1B1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #3E4249, #26272b);
+    border-radius: 32px;
+    box-shadow: 2px 2px 16px #161616;
+}
+
+.container p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, .3);
+    margin: 4px 0;
+}
+
+svg{
+    transform: rotateY(180deg);
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 64px;
+    fill: rgba(250, 250, 250, .2);
+}
+
+h2{
+    font-size: 24px;
+    color: rgb(250, 250, 250);
+    margin-bottom: 32px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(250deg, #3E4249,  #2f3338, #26272b);
+    padding: 16px;
+    border-radius: 32px;
+    box-shadow: inset 4px 4px 16px #252525;
+    margin: 16px 0px 32px 0;
+}
+
+.row textarea{
+    color: rgba(250, 250, 250, .8);
+    background: none;
+    outline: none;
+    resize: none;
+    border: none;
+    max-height: 15px;
+}
+
+h3{
+    display: inline-block;
+    background: linear-gradient(to bottom, #f1f1f1 , #ffffff);
+    border-radius: 32px;
+    padding: 16px;
+    box-shadow: 4px 4px 16px #252525;
+    margin: 8px 0px;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+#clipboard{
+    position: absolute;
+    padding: 16px;
+    background: rgb(164, 243, 85);
+    box-shadow: 4px 4px 16px #252525;
+    border-radius: 32px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 32px 32px 0;
+    transform: translate3d(0px, 20px, 0px);
+    opacity: 0;
+    transition: .3s all ease-in;
+}
+
+#password::selection{
+    background: none;
+}
+
+.active{
+    transform: translate3d(0px, 0px, 0px) !important;
+    opacity: 1 !important;
+}
+
